@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapons",
+  "info": {
+    "name": "weapon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "effect": {
+      "type": "text"
+    },
+    "rank": {
+      "type": "enumeration",
+      "enum": [
+        "Two_Star",
+        "Three_Star",
+        "Four_Star",
+        "Five_Star",
+        "Six_Star"
+      ]
+    },
+    "picture_link": {
+      "type": "string"
+    },
+    "weapon_type": {
+      "model": "weapon-type",
+      "via": "weapons"
+    },
+    "signature_weapon_of": {
+      "via": "signature_weapon",
+      "model": "construct"
+    },
+    "stats_atk": {
+      "type": "integer"
+    },
+    "stats_crit": {
+      "type": "integer"
+    }
+  }
+}

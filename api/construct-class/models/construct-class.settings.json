@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "construct_classes",
+  "info": {
+    "name": "Construct Class",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "class": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "class_specific_skill": {
+      "type": "text"
+    },
+    "constructs": {
+      "via": "construct_class",
+      "collection": "construct"
+    }
+  }
+}

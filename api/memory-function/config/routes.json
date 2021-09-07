@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/memory-functions",
+      "handler": "memory-function.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/memory-functions/count",
+      "handler": "memory-function.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/memory-functions/:id",
+      "handler": "memory-function.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/memory-functions",
+      "handler": "memory-function.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/memory-functions/:id",
+      "handler": "memory-function.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/memory-functions/:id",
+      "handler": "memory-function.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

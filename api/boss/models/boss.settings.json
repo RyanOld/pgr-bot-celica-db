@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bosses",
+  "info": {
+    "name": "boss",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "move_set": {
+      "type": "text",
+      "unique": true
+    },
+    "boss_weaknesses": {
+      "via": "bosses",
+      "collection": "boss-weakness"
+    },
+    "boss_strengths": {
+      "via": "bosses",
+      "collection": "boss-strength"
+    },
+    "picture_link": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

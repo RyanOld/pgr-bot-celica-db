@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "constructs",
+  "info": {
+    "name": "construct",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "rank": {
+      "type": "enumeration",
+      "enum": [
+        "B_Rank",
+        "A_Rank",
+        "S_Rank"
+      ],
+      "required": true
+    },
+    "element": {
+      "type": "string"
+    },
+    "construct_class": {
+      "model": "construct-class",
+      "via": "constructs"
+    },
+    "weapon_type": {
+      "model": "weapon-type",
+      "via": "constructs"
+    },
+    "signature_weapon": {
+      "via": "signature_weapon_of",
+      "model": "weapon"
+    },
+    "picture_link": {
+      "type": "string"
+    },
+    "basic_attack": {
+      "type": "text"
+    },
+    "ultimate": {
+      "type": "text"
+    },
+    "qte": {
+      "type": "text"
+    },
+    "core_passive": {
+      "type": "text"
+    },
+    "leader_skill": {
+      "type": "text"
+    },
+    "ss_passive": {
+      "type": "text"
+    },
+    "sss_passive": {
+      "type": "text"
+    },
+    "sss_plus_passive": {
+      "type": "text"
+    },
+    "usage_strategy": {
+      "type": "text"
+    },
+    "recommended_team_strategy": {
+      "type": "text"
+    },
+    "recommended_memory_build": {
+      "type": "text"
+    },
+    "recommended_memories": {
+      "via": "best_on",
+      "collection": "memory"
+    },
+    "red_ping_skill": {
+      "type": "text"
+    },
+    "yellow_ping_skill": {
+      "type": "text"
+    },
+    "blue_ping_skill": {
+      "type": "text"
+    },
+    "stats_atk": {
+      "type": "integer"
+    },
+    "stats_crit": {
+      "type": "integer"
+    },
+    "stats_def": {
+      "type": "integer"
+    },
+    "stats_hp": {
+      "type": "integer"
+    }
+  }
+}

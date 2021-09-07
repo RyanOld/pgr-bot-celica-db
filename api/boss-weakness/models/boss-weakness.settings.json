@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boss_weaknesses",
+  "info": {
+    "name": "Boss Weakness",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "weakness": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "bosses": {
+      "via": "boss_weaknesses",
+      "collection": "boss",
+      "dominant": true
+    }
+  }
+}

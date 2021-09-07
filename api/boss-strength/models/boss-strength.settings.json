@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boss_strengths",
+  "info": {
+    "name": "Boss Strength",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "strength": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "bosses": {
+      "via": "boss_strengths",
+      "collection": "boss",
+      "dominant": true
+    }
+  }
+}

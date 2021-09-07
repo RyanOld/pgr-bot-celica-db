@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/boss-weaknesses",
+      "handler": "boss-weakness.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boss-weaknesses/count",
+      "handler": "boss-weakness.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boss-weaknesses/:id",
+      "handler": "boss-weakness.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/boss-weaknesses",
+      "handler": "boss-weakness.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/boss-weaknesses/:id",
+      "handler": "boss-weakness.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/boss-weaknesses/:id",
+      "handler": "boss-weakness.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/construct-classes",
+      "handler": "construct-class.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/construct-classes/count",
+      "handler": "construct-class.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/construct-classes/:id",
+      "handler": "construct-class.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/construct-classes",
+      "handler": "construct-class.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/construct-classes/:id",
+      "handler": "construct-class.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/construct-classes/:id",
+      "handler": "construct-class.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memories",
+  "info": {
+    "name": "memory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "rank": {
+      "type": "enumeration",
+      "enum": [
+        "Two_Star",
+        "Three_Star",
+        "Four_Star",
+        "Five_Star",
+        "Six_Star"
+      ]
+    },
+    "memory_functions": {
+      "via": "memories",
+      "collection": "memory-function"
+    },
+    "two_pc_effect": {
+      "type": "text",
+      "unique": true
+    },
+    "four_pc_effect": {
+      "type": "text",
+      "unique": true
+    },
+    "stats_attack": {
+      "type": "integer"
+    },
+    "stats_critical": {
+      "type": "integer"
+    },
+    "stats_defense": {
+      "type": "integer"
+    },
+    "stats_hp": {
+      "type": "integer"
+    },
+    "picture_link": {
+      "type": "string"
+    },
+    "best_on": {
+      "via": "recommended_memories",
+      "collection": "construct",
+      "dominant": true
+    }
+  }
+}

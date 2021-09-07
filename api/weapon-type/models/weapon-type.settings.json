@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weapon_types",
+  "info": {
+    "name": "Weapon Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "weapons": {
+      "via": "weapon_type",
+      "collection": "weapon"
+    },
+    "constructs": {
+      "via": "weapon_type",
+      "collection": "construct"
+    }
+  }
+}

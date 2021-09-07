@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memory_functions",
+  "info": {
+    "name": "Memory Function"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "function": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "memories": {
+      "via": "memory_functions",
+      "collection": "memory",
+      "dominant": true
+    }
+  }
+}

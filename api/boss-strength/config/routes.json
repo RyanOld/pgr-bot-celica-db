@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/boss-strengths",
+      "handler": "boss-strength.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boss-strengths/count",
+      "handler": "boss-strength.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boss-strengths/:id",
+      "handler": "boss-strength.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/boss-strengths",
+      "handler": "boss-strength.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/boss-strengths/:id",
+      "handler": "boss-strength.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/boss-strengths/:id",
+      "handler": "boss-strength.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
