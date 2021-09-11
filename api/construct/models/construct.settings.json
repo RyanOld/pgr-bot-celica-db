@@ -101,6 +101,9 @@
     },
     "stats_hp": {
       "type": "integer"
+    },
+    "thumbnail_link": {
+      "type": "string"
     }
   }
 }

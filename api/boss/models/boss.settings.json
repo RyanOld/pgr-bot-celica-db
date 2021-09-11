@@ -32,6 +32,12 @@
     "picture_link": {
       "type": "string",
       "unique": true
+    },
+    "thumbnail_link": {
+      "type": "string"
+    },
+    "fight_strategy": {
+      "type": "text"
     }
   }
 }

@@ -58,6 +58,9 @@
       "via": "recommended_memories",
       "collection": "construct",
       "dominant": true
+    },
+    "thumbnail_link": {
+      "type": "string"
     }
   }
 }
