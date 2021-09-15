@@ -34,8 +34,8 @@
       "via": "constructs"
     },
     "weapon_type": {
-      "model": "weapon-type",
-      "via": "constructs"
+      "via": "constructs",
+      "model": "weapon-type"
     },
     "signature_weapon": {
       "via": "signature_weapon_of",

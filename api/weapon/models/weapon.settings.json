@@ -13,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "effect": {
       "type": "text"
@@ -32,8 +34,8 @@
       "type": "string"
     },
     "weapon_type": {
-      "model": "weapon-type",
-      "via": "weapons"
+      "via": "weapons",
+      "model": "weapon-type"
     },
     "signature_weapon_of": {
       "via": "signature_weapon",

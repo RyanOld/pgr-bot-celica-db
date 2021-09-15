@@ -33,11 +33,11 @@
     },
     "two_pc_effect": {
       "type": "text",
-      "unique": true
+      "unique": false
     },
     "four_pc_effect": {
       "type": "text",
-      "unique": true
+      "unique": false
     },
     "stats_attack": {
       "type": "integer"
@@ -61,6 +61,9 @@
     },
     "thumbnail_link": {
       "type": "string"
+    },
+    "six_pc_effect": {
+      "type": "text"
     }
   }
 }
